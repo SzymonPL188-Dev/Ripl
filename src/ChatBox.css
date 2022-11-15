@@ -1,0 +1,35 @@
+.chatbox {
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+  width: calc(100% - 60px);
+  height: 30px;
+  padding: 10px;
+  
+  outline: none;
+  
+  background: rgba(68, 68, 85, 0.47);
+  border-radius: 30px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.4px);
+  -webkit-backdrop-filter: blur(9.4px);
+  border: 1px solid rgba(68, 68, 85, 0.5);
+
+  color: #fff;
+  font-size: 16px;
+}
+
+.chatbox:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* .uploadImage {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  z-index: 100;
+  border-radius: 30px;
+} */

@@ -1,0 +1,88 @@
+.message {
+  width: 100%;
+  height: auto;
+}
+
+.message > * {
+  margin: 0;
+  padding: 0;
+}
+
+.messageTop {
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #ffffff10;
+}
+
+.bottom {
+  border-bottom: 1px solid #ffffff10;
+}
+
+.messageTop > * {
+  font-size: 17px;
+}
+
+.messageSender {
+  float: left;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+
+.messageSender > img {
+  float: left;
+  height: 25px;
+  width: 25px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.messageTimestamp {
+  float: right;
+  margin-right: 10px;
+  opacity: 0.5;
+}
+
+.messageContent {
+  margin: 10px;
+  width: calc(100% - 20px);
+  word-break: break-all;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.messageContent > * {
+  margin: 0;
+  padding: 0;
+}
+
+br {
+  height: 10px;
+}
+
+.system {
+  background: #77f;
+  padding: 2px;
+  border-radius: 5px;
+  select: all;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.bot {
+  background: #f33;
+  padding: 2px;
+  border-radius: 5px;
+  select: all;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.tagged {
+  background: #ff01;
+}
+
+.messageContent > * > img {
+  max-width: 40vw;
+  max-height: 40vh;
+  border-radius: 10px;
+}

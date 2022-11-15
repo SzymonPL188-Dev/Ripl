@@ -1,0 +1,15 @@
+#auth {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 20px);
+
+  display: grid;
+  place-items: center;
+}
+
+#authButton {
+  display: grid;
+  place-items: center;
+}

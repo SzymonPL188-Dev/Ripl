@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Share+Tech+Mono&display=swap');
+
+body {
+  background: #223;
+  color: #fff;
+  overflow: hidden;
+}
+
+* {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#messageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.popupBG {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1129;
+
+  display: grid;
+  place-items: center;
+}
+
+a {
+  color: #9999ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+code {
+  font-family: 'Share Tech Mono', monospace;
+  background: #334;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#top {
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+  opacity: 0.5;
+}
+
+#settings {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 200;
+}
+
+#settings:hover {
+  animation: spin 0.5s cubic-bezier(.33,0,.06,1);
+}
+
+#settings:active {
+  filter: brightness(0.8);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#loader {
+  position: absolute;
+  z-index: 150;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 7px;
+  animation: loader 1s ease-in infinite;
+  background: #77f;
+}
+
+@keyframes loader {
+  0% {
+    left: 0;
+    width: 0;
+  }
+  25% {
+    left: 0;
+    width: 100%;
+  }
+  50% {
+    left: 100%;
+    width: 0;
+  }
+  100% {
+    left: 0;
+    width: 0;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #334;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #556;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #445;
+}
+
+button {
+  border: none;
+  background: #334;
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+button:active {
+  filter: brightness(0.9);
+}
